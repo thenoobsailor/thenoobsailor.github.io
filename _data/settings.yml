@@ -1,0 +1,7 @@
+menu:
+- {name: 'About',         url: 'about.html'}
+- {name: 'Archive',       url: 'archive.html'}
+
+social:
+- {icon: 'github',       url: 'https://github.com/uladzmi/strip'}
+- {icon: 'instagram',    url: 'https://www.instagram.com/'}

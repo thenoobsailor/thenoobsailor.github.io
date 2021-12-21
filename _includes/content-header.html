@@ -1,0 +1,18 @@
+<div class="content-header" id="content-header">
+    <span class="post-title">
+      <h2 id="title">
+      {% if page.url == "/" %}
+        {{ site.posts.first.title }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+      </h2>
+    </span>
+    <span class="post-date">
+      {% if page.url == "/" %}
+        {{ site.posts.first.date | date_to_string }}
+      {% else %}
+        {{ page.date | date_to_string }}
+      {% endif %}
+    </span>
+</div>

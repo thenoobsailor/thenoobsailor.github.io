@@ -1,0 +1,10 @@
+# Site config
+
+title:        Comic strip
+description:	simple Jekyll theme
+author:       uladzmi
+
+permalink: /:year/:title
+
+#Plugins
+plugins: [jekyll-seo-tag]

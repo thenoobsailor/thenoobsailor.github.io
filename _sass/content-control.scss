@@ -1,0 +1,48 @@
+.content-control{
+  position: relative;
+
+  margin-top: 2%;
+
+  height: 2.5rem;
+  text-align: center;
+  vertical-align: middle;
+
+  .start {
+    position: absolute;
+    left: 0;
+
+    display: inline-block;
+    width: 2.5rem;
+  }
+
+  .navigation {
+    display: inline-block;
+    font-size: 1.25rem;
+    width: 80%;
+
+    #prev-button {
+      margin-right: 7%;
+    }
+    #rand-image {
+      width: 2.5rem;
+    }
+    #next-button {
+      padding-left: 1rem;
+      margin-left: 3%;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+  }
+
+  .end {
+    position: absolute;
+    right: 0;
+
+    display: inline-block;
+    width: 2.5rem;
+  }
+
+}

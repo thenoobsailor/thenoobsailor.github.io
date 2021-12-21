@@ -1,0 +1,36 @@
+<head>
+  <title>
+    {{ page.title }}
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ site.github.url }}/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap">
+  <script>
+      function randomPost() {
+        // we keep the list of all post urls, may become problematic as it grows
+        posts = [{% for post in site.posts %}"{{ post.url }}",{% endfor %}]
+        i = Math.floor(Math.random() * {{site.posts.size}});
+        window.location.href = '{{ site.github.url }}' + posts[i];
+      }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('keydown', function(event) {
+      if ((event.keyCode == 37) && ("{{ page.previous.url }}")) {
+          window.location.href = '{{ site.github.url }}{{ page.previous.url }}';
+      }
+      else if ((event.keyCode == 37) && ("{{page.url}}" == "/")) { // left arrow
+          window.location.href = '{{ site.github.url }}{{ site.posts[1].url }}';
+      }
+      else if ((event.keyCode == 39) && ("{{ page.next.url }}")) { // right arrow
+          window.location.href = '{{ site.github.url }}{{ page.next.url }}';
+      }
+      else if (event.keyCode == 13) { // enter
+          randomPost();
+      }
+    }, true);
+  </script>
+  {% seo %}
+</head>
