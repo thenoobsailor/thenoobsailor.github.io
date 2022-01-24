@@ -1,7 +1,7 @@
 # Site config
 
-title:        Comic strip
-description:	simple Jekyll theme
+title:        The Noob Sailor
+description:	Ein Comic über Segelnlernen
 author:       uladzmi
 
 permalink: /:year/:title

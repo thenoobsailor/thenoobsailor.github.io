@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Archive
+title: Archiv
 ---
 
+<hr>
 <ul class="archive-container">
   {% for post in site.posts %}
     <h3>
@@ -18,7 +19,7 @@ title: Archive
     </h3>
     <li itemscope>
       <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-      <span id="archive-item-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }}</span>
+      <span id="archive-item-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%d.%m" }}</span>
     </li>
   {% endfor %}
 </ul>

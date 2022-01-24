@@ -1,8 +1,8 @@
 menu:
-- {name: 'About',         url: 'about.html'}
-- {name: 'Archive',       url: 'archive.html'}
+- {name: 'Info',         url: 'about.html'}
+- {name: 'Archiv',       url: 'archive.html'}
 
 social:
-- {icon: 'github',       url: 'https://github.com/uladzmi/strip'}
-- {icon: 'instagram',    url: 'https://www.instagram.com/'}
+- {icon: 'github',       url: 'https://github.com/thenoobsailor/thenoobsailor.github.io'}
+# - {icon: 'instagram',    url: 'https://www.instagram.com/'}
 # - {icon: 'discord',    url: 'https://discord.com/'}

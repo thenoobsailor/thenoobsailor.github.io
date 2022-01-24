@@ -18,9 +18,9 @@
     </div>
     <div class="post-date">
       {% if page.url == "/" %}
-        {{ site.posts.first.date | date_to_string }}
+        {{ site.posts.first.date | date: "%d.%m.%Y" }}
       {% else %}
-        {{ page.date | date_to_string }}
+        {{ page.date | date: "%d.%m.%Y" }}
       {% endif %}
     </div>
   </div>
